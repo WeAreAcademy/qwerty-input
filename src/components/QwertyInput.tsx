@@ -21,7 +21,7 @@ function QwertyInput(): JSX.Element {
 
   return (
     <>
-      <input value={text} />
+      <input value={text} onChange={(e) => setText(e.target.value)} />
       <button onClick={() => addLetter("Q")}>Q</button>
       <button onClick={() => addLetter("W")}>W</button>
       <button onClick={() => addLetter("e")}>e</button>
